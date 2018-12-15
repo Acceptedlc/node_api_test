@@ -1,7 +1,7 @@
 var spawn = require('child_process').spawn;
 
 let child = spawn('node', [`${__dirname}/child.js`], {
-  stdio: ['ignore', 'inherit', 'ignore'],
+  stdio: ['ignore', 'inherit', 'ignore', 'ipc'],
   detached: true,
   cwd: __dirname
 });
