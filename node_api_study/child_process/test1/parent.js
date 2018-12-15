@@ -10,6 +10,7 @@ process.on('exit', function() {
   console.log("")
 })
 
+setTimeout(() => console.log("i am die"), 1000 * 3600);
 
 // child.send("叫爸爸");
 
