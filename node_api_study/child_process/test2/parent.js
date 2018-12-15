@@ -6,8 +6,11 @@ let child = spawn('node', [`${__dirname}/child.js`], {
   cwd: __dirname
 });
 
+
 child.on('exit', function() {
   console.log("child die");
 })
+
+child.send('叫爸爸');
 
 setTimeout(() => console.log("i am die"), 1000 * 3600);

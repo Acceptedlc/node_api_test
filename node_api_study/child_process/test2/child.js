@@ -1,3 +1,4 @@
+console.log("fuck");
 process.on("message", function(data) {
   console.log("child recv: ", data);
   setTimeout(() => process.exit(0), 500);
