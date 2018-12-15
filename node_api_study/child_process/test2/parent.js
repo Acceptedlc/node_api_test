@@ -11,11 +11,3 @@ child.on('exit', function() {
 })
 
 setTimeout(() => console.log("i am die"), 1000 * 3600);
-
-// child.send("叫爸爸");
-
-// child.on("message", function(data) {
-//   console.log(data);
-// });
-
-// setTimeout(() => console.log("sfdsfsdf"), 1000 * 10000);
