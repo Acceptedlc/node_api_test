@@ -1,4 +1,4 @@
-setTimeout(() => process.exit(0), 1000);
+setTimeout(() => process.exit(0), 500);
 
 
 // process.on("message", function(data) {

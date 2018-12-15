@@ -6,8 +6,8 @@ let child = spawn('node', [`${__dirname}/child.js`], {
   cwd: __dirname
 });
 
-process.on('exit', function() {
-  console.log("child die")
+child.on('exit', function() {
+  console.log("child die");
 })
 
 setTimeout(() => console.log("i am die"), 1000 * 3600);
